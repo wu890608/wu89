@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         return tv
     }()
     fileprivate lazy var pageContentView:PageContentView = {[weak self] in
-        let frame = CGRect(x: 0, y: 108, width: sWidth, height: sHeight - 108)
+        let frame = CGRect(x: 0, y: 108, width: sWidth, height: sHeight - 158)
         
         var vcs = [UIViewController]()
         vcs.append(RecommendViewController())

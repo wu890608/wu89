@@ -12,6 +12,7 @@ import UIKit
 fileprivate let kItemMargin:CGFloat = 10
 fileprivate let kItemW = (sWidth - 3 * kItemMargin) / 2
 fileprivate let kItemH = kItemW * 3 / 4
+fileprivate let kHeadViewH:CGFloat = 50
 
 class RecommendViewController: UIViewController {
     
@@ -20,10 +21,15 @@ class RecommendViewController: UIViewController {
         layout.itemSize = CGSize(width: kItemW, height: kItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = kItemMargin
-        layout.headerReferenceSize = CGSize(width: sWidth, height: 50)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        layout.headerReferenceSize = CGSize(width: sWidth, height: kHeadViewH)
         
         let cv = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         cv.dataSource = self
+        cv.backgroundColor = UIColor.purple
+        cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cv.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
+        cv.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         return cv
         
     }()
@@ -31,8 +37,7 @@ class RecommendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.purple
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+
         setupUI()
     }
 }
@@ -56,6 +61,11 @@ extension RecommendViewController:UICollectionViewDataSource{
         cell.backgroundColor = UIColor.lightGray
         
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        headView.backgroundColor = UIColor.green
+        return headView
     }
 
 }
