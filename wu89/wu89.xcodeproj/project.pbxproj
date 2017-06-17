@@ -15,6 +15,8 @@
 		94616A941EF51180002B6B4F /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94616A921EF51180002B6B4F /* CollectionHeaderView.xib */; };
 		94616A971EF5141D002B6B4F /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616A951EF5141D002B6B4F /* CollectionNormalCell.swift */; };
 		94616A981EF5141D002B6B4F /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94616A961EF5141D002B6B4F /* CollectionNormalCell.xib */; };
+		94616A9B1EF51B83002B6B4F /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616A991EF51B83002B6B4F /* CollectionPrettyCell.swift */; };
+		94616A9C1EF51B83002B6B4F /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94616A9A1EF51B83002B6B4F /* CollectionPrettyCell.xib */; };
 		9497974C1EF3AC900044727C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497974B1EF3AC900044727C /* AppDelegate.swift */; };
 		949797511EF3AC900044727C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9497974F1EF3AC900044727C /* Main.storyboard */; };
 		949797531EF3AC900044727C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949797521EF3AC900044727C /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		94616A921EF51180002B6B4F /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		94616A951EF5141D002B6B4F /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		94616A961EF5141D002B6B4F /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		94616A991EF51B83002B6B4F /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		94616A9A1EF51B83002B6B4F /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		949797481EF3AC900044727C /* wu89.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wu89.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9497974B1EF3AC900044727C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		949797501EF3AC900044727C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 				94616A921EF51180002B6B4F /* CollectionHeaderView.xib */,
 				94616A951EF5141D002B6B4F /* CollectionNormalCell.swift */,
 				94616A961EF5141D002B6B4F /* CollectionNormalCell.xib */,
+				94616A991EF51B83002B6B4F /* CollectionPrettyCell.swift */,
+				94616A9A1EF51B83002B6B4F /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				949797711EF3CBBD0044727C /* Mine.storyboard in Resources */,
 				9497976C1EF3CB8B0044727C /* Live.storyboard in Resources */,
 				94616A981EF5141D002B6B4F /* CollectionNormalCell.xib in Resources */,
+				94616A9C1EF51B83002B6B4F /* CollectionPrettyCell.xib in Resources */,
 				949797511EF3AC900044727C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +305,7 @@
 				94616A901EF5047C002B6B4F /* RecommendViewController.swift in Sources */,
 				949797781EF3CE650044727C /* MainViewController.swift in Sources */,
 				94616A971EF5141D002B6B4F /* CollectionNormalCell.swift in Sources */,
+				94616A9B1EF51B83002B6B4F /* CollectionPrettyCell.swift in Sources */,
 				94616A8A1EF4C35E002B6B4F /* PageTitleView.swift in Sources */,
 				94616A8E1EF4CA66002B6B4F /* PageContentView.swift in Sources */,
 				949797801EF3D2380044727C /* UIBarButtonItem-Extension.swift in Sources */,
