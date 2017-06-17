@@ -13,6 +13,7 @@ fileprivate let kItemMargin:CGFloat = 10
 fileprivate let kItemW = (sWidth - 3 * kItemMargin) / 2
 fileprivate let kItemH = kItemW * 3 / 4
 fileprivate let kHeadViewH:CGFloat = 50
+let backColor = #colorLiteral(red: 0.8822940588, green: 0.8823967576, blue: 0.882248044, alpha: 1)
 
 class RecommendViewController: UIViewController {
     
@@ -26,9 +27,10 @@ class RecommendViewController: UIViewController {
         
         let cv = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         cv.dataSource = self
-        cv.backgroundColor = UIColor.purple
-        cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        cv.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
+        cv.backgroundColor = UIColor.white
+        
+        
+        
         cv.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         return cv
         
@@ -36,8 +38,9 @@ class RecommendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
+        collectionView.register(UINib.init(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         setupUI()
     }
 }
@@ -58,13 +61,12 @@ extension RecommendViewController:UICollectionViewDataSource{
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColor.lightGray
         
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
-        headView.backgroundColor = UIColor.green
+        
         return headView
     }
 

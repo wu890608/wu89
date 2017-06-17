@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFK-qj-NLO">
+                    <rect key="frame" x="0.0" y="8" width="320" height="42"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="nFs-x7-zBF">
+                            <rect key="frame" x="10" y="14" width="14" height="14"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s89-Vg-PJX">
+                            <rect key="frame" x="34" y="12" width="31" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aem-9K-h9r">
+                            <rect key="frame" x="269" y="6" width="41" height="30"/>
+                            <state key="normal" title="更多&gt;">
+                                <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="s89-Vg-PJX" firstAttribute="centerY" secondItem="nFs-x7-zBF" secondAttribute="centerY" id="YLN-kX-bZK"/>
+                        <constraint firstAttribute="trailing" secondItem="Aem-9K-h9r" secondAttribute="trailing" constant="10" id="hUt-MO-veP"/>
+                        <constraint firstItem="s89-Vg-PJX" firstAttribute="leading" secondItem="nFs-x7-zBF" secondAttribute="trailing" constant="10" id="iOA-4I-cqM"/>
+                        <constraint firstItem="nFs-x7-zBF" firstAttribute="centerY" secondItem="qFK-qj-NLO" secondAttribute="centerY" id="nk5-mZ-s8h"/>
+                        <constraint firstItem="nFs-x7-zBF" firstAttribute="leading" secondItem="qFK-qj-NLO" secondAttribute="leading" constant="10" id="vWr-H7-moO"/>
+                        <constraint firstItem="Aem-9K-h9r" firstAttribute="centerY" secondItem="qFK-qj-NLO" secondAttribute="centerY" id="zFd-RM-XZD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.88430924550000001" green="0.88137955800000001" blue="0.88108116390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qFK-qj-NLO" secondAttribute="trailing" id="bsL-TB-Shm"/>
+                <constraint firstAttribute="bottom" secondItem="qFK-qj-NLO" secondAttribute="bottom" id="fLb-64-Gcw"/>
+                <constraint firstItem="qFK-qj-NLO" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="vYN-aB-aXn"/>
+                <constraint firstItem="qFK-qj-NLO" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="xiM-7o-Eye"/>
+            </constraints>
+            <point key="canvasLocation" x="-110" y="-153"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>
