@@ -17,7 +17,7 @@ fileprivate let kHeadViewH:CGFloat = 50
 let backColor = #colorLiteral(red: 0.8822940588, green: 0.8823967576, blue: 0.882248044, alpha: 1)
 
 class RecommendViewController: UIViewController {
-    
+    fileprivate lazy var recommendVM = RecommendViewModel()
     fileprivate lazy var collectionView :UICollectionView = {[unowned self] in
         let layout = UICollectionViewFlowLayout()
 //        layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
@@ -48,8 +48,11 @@ class RecommendViewController: UIViewController {
     }
 }
 extension RecommendViewController{
-    fileprivate func setupUI(){
+    fileprivate func setupUI(){ 
         view.addSubview(collectionView)
+    }
+    fileprivate func loadData(){
+        recommendVM.requestData()
     }
 }
 extension RecommendViewController:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{

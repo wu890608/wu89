@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BE4DED522172A0D55DBDB51 /* Pods_wu89.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C065DC59FD01E08484A2E21A /* Pods_wu89.framework */; };
 		94616A8A1EF4C35E002B6B4F /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616A891EF4C35E002B6B4F /* PageTitleView.swift */; };
 		94616A8C1EF4C4B7002B6B4F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616A8B1EF4C4B7002B6B4F /* Common.swift */; };
 		94616A8E1EF4CA66002B6B4F /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616A8D1EF4CA66002B6B4F /* PageContentView.swift */; };
@@ -17,6 +18,8 @@
 		94616A981EF5141D002B6B4F /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94616A961EF5141D002B6B4F /* CollectionNormalCell.xib */; };
 		94616A9B1EF51B83002B6B4F /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616A991EF51B83002B6B4F /* CollectionPrettyCell.swift */; };
 		94616A9C1EF51B83002B6B4F /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94616A9A1EF51B83002B6B4F /* CollectionPrettyCell.xib */; };
+		94616ADC1EF52D52002B6B4F /* NetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616ADB1EF52D52002B6B4F /* NetworkingTool.swift */; };
+		94616ADF1EF52F67002B6B4F /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94616ADE1EF52F67002B6B4F /* RecommendViewModel.swift */; };
 		9497974C1EF3AC900044727C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9497974B1EF3AC900044727C /* AppDelegate.swift */; };
 		949797511EF3AC900044727C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9497974F1EF3AC900044727C /* Main.storyboard */; };
 		949797531EF3AC900044727C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949797521EF3AC900044727C /* Assets.xcassets */; };
@@ -40,6 +43,8 @@
 		94616A961EF5141D002B6B4F /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		94616A991EF51B83002B6B4F /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		94616A9A1EF51B83002B6B4F /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		94616ADB1EF52D52002B6B4F /* NetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTool.swift; sourceTree = "<group>"; };
+		94616ADE1EF52F67002B6B4F /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		949797481EF3AC900044727C /* wu89.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wu89.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9497974B1EF3AC900044727C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		949797501EF3AC900044727C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +57,9 @@
 		949797751EF3CE650044727C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9497977C1EF3CE930044727C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9497977F1EF3D2380044727C /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		C065DC59FD01E08484A2E21A /* Pods_wu89.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wu89.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3A6BA8C92371D3AEFDCB3F /* Pods-wu89.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wu89.release.xcconfig"; path = "Pods/Target Support Files/Pods-wu89/Pods-wu89.release.xcconfig"; sourceTree = "<group>"; };
+		EF45EA8C5021D384EEBC2C87 /* Pods-wu89.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wu89.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wu89/Pods-wu89.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +67,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE4DED522172A0D55DBDB51 /* Pods_wu89.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0644C98EEDB0D387362D0811 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF45EA8C5021D384EEBC2C87 /* Pods-wu89.debug.xcconfig */,
+				ED3A6BA8C92371D3AEFDCB3F /* Pods-wu89.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C654860F6C3E9EC51F1F73A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C065DC59FD01E08484A2E21A /* Pods_wu89.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94616ADD1EF52F37002B6B4F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94616ADE1EF52F67002B6B4F /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9497973F1EF3AC900044727C = {
 			isa = PBXGroup;
 			children = (
 				9497974A1EF3AC900044727C /* wu89 */,
 				949797491EF3AC900044727C /* Products */,
+				0644C98EEDB0D387362D0811 /* Pods */,
+				5C654860F6C3E9EC51F1F73A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +152,7 @@
 		949797631EF3BAB00044727C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				94616ADD1EF52F37002B6B4F /* ViewModel */,
 				949797791EF3CE730044727C /* Controller */,
 				9497977A1EF3CE730044727C /* Model */,
 				9497977B1EF3CE730044727C /* View */,
@@ -154,6 +191,7 @@
 		949797671EF3BAB00044727C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				94616ADB1EF52D52002B6B4F /* NetworkingTool.swift */,
 				9497977E1EF3D1FE0044727C /* Extension */,
 				94616A8B1EF4C4B7002B6B4F /* Common.swift */,
 			);
@@ -228,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9497975A1EF3AC900044727C /* Build configuration list for PBXNativeTarget "wu89" */;
 			buildPhases = (
+				E09D1D76EEE0108ACDAF6D86 /* [CP] Check Pods Manifest.lock */,
 				949797441EF3AC900044727C /* Sources */,
 				949797451EF3AC900044727C /* Frameworks */,
 				949797461EF3AC900044727C /* Resources */,
+				2403F610D2ED144020591EE2 /* [CP] Embed Pods Frameworks */,
+				115E512A1992EB5A6802DDA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,12 +336,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		115E512A1992EB5A6802DDA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wu89/Pods-wu89-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2403F610D2ED144020591EE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wu89/Pods-wu89-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E09D1D76EEE0108ACDAF6D86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		949797441EF3AC900044727C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				94616A931EF51180002B6B4F /* CollectionHeaderView.swift in Sources */,
+				94616ADC1EF52D52002B6B4F /* NetworkingTool.swift in Sources */,
 				9497974C1EF3AC900044727C /* AppDelegate.swift in Sources */,
 				94616A901EF5047C002B6B4F /* RecommendViewController.swift in Sources */,
 				949797781EF3CE650044727C /* MainViewController.swift in Sources */,
@@ -311,6 +401,7 @@
 				949797801EF3D2380044727C /* UIBarButtonItem-Extension.swift in Sources */,
 				94616A8C1EF4C4B7002B6B4F /* Common.swift in Sources */,
 				9497977D1EF3CE930044727C /* HomeViewController.swift in Sources */,
+				94616ADF1EF52F67002B6B4F /* RecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +533,7 @@
 		};
 		9497975B1EF3AC900044727C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF45EA8C5021D384EEBC2C87 /* Pods-wu89.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +549,7 @@
 		};
 		9497975C1EF3AC900044727C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3A6BA8C92371D3AEFDCB3F /* Pods-wu89.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
