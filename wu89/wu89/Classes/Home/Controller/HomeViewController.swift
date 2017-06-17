@@ -10,6 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    fileprivate lazy var pageTitleView:PageTitleView = {
+        let frame = CGRect(x: 0, y: 64, width: sWidth, height: 44)
+        let tv = PageTitleView(frame: frame, titles: ["推荐","游戏","娱乐","趣玩"])
+        return tv
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,8 +24,9 @@ class HomeViewController: UIViewController {
 // MARK: - 设置UI界面
 extension HomeViewController{
     fileprivate func setupUI(){
+        automaticallyAdjustsScrollViewInsets = false
         setupNavigationBar()
-        
+        view.addSubview(pageTitleView)
     }
     fileprivate func setupNavigationBar(){
         let btn = UIButton()
