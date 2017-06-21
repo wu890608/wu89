@@ -1,0 +1,6 @@
+framework module Pods_wu89 {
+  umbrella header "Pods-wu89-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -45,6 +45,7 @@ class RecommendViewController: UIViewController {
         collectionView.register(UINib.init(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         collectionView.register(UINib.init(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: "petty")
         setupUI()
+        loadData()
     }
 }
 extension RecommendViewController{
